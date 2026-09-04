@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Types of Forms</h1>
+    <h2>Get Form</h2>
+    <div> <!--It is used to wrap the content in a block and add the new line-->
+        <p>It is used as search forms like : you want to search a product</p>
+        <form action="" method="get">
+            <label for="Search">What do you want to search</label>
+            <input type="text" name="Search" placeholder="Search" id="Search"> <!--id is used for uniqueness-->
+        </form>
+    </div>
+
+    <h2>Post form</h2>
+    <p>It is used as login form</p>
+    <form action="" method="post">
+        <h3>Text Input</h3>
+        <div>
+            <label for="Name">Enter your Name</label>
+            <input type="text" placeholder="Eg James" id="Name" required> <!-- required means it is compulsory if user doesnt fill it he cannot submit it-->
+        </div>
+        <div>
+            <label for="Surname">Enter your Name</label>
+            <input type="text" placeholder="Eg Bond" id="Surname" required> 
+        </div>
+        <h3>Radio Input</h3>
+        <div>
+            <label for="Gender1">Male</label>
+            <input type="radio" name="Gender" id="Gender1" value="Male" required>
+            <label for="Gender2">Female</label>
+            <!--The correct id help us when we click the text it automatically click on button-->
+            <input type="radio" name="Gender" id="Gender2" value="Female" required>
+            <!--If we put the name same then only one button is select-->
+        </div>
+        <h3>CheckBox Input</h3>
+        <div>
+            <label for="Newsletter">Subscribe To Newsletter</label>
+            <input type="checkbox" name="Subscribe" id="Newsletter" value="yes">
+        </div>
+        <h3>Textarea Input</h3>
+        <div>
+            <label for="Reviews">Write Your Reviews</label>
+            <br>
+            <textarea name="Reviews" id="Reviews" cols="30" rows="10"></textarea>
+        </div>
+        <h3>Select Input</h3>   gg
+        <div>
+            <select name="Fruits" id="Fruits" required>
+                <option value="Select">Select fruit</option>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

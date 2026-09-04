@@ -1,0 +1,10 @@
+.red{ /* . is used to add class*/
+    background-color: red;
+}
+
+#First{ /*# is used to add ID*/
+    color: yellow
+}
+#Second{
+    color: cyan;
+}

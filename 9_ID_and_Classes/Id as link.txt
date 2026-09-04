@@ -1,0 +1,4 @@
+  We can also use ID to go to specific paragraph copy that link-
+  https://en.wikipedia.org/wiki/Data_compression#mwAxw
+
+  we can directly go to that paragraph instead of at top
