@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Element Selector.It add the property to all the div */
+        div{
+            background-color: red;
+        }
+        /* Class Selector.It add the property to the tags only with the class="yellow."." is used to represent class in CSS */
+        .yellow{
+            background-color: yellow;
+        }
+        /* ID Selector.It is used to add the property to single tag because the id is unique in tags."#" is used to represent ID in CSS */
+        #cyan{
+            background-color: cyan;
+        }
+        /* Child Selector.It add the property to the child tag in a parent tag.IT is represent as parent tag > child tag */
+        div > p{
+            color: red;
+            background-color: yellow ;
+        }
+         /* Descendent Selector.It add the property to the child where it exist in parent.Eg A>B>C we want to put property to c but the b tag is also there so we use Descendant Selector*/
+         span p{
+            color: yellow;
+            background-color: aqua;
+         }
+         /* Universal Selector.It is used to give the properties to all tags */
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         /* Pseudo Selector.It is based on actions places etc*/
+         a:hover{
+            background-color: purple
+         }
+         a:link{
+            color: darkmagenta
+         }
+         a:visited{
+            color: pink;
+         }
+         /* It is only applied to the first child of class which is h6 */
+         h6:first-child{
+            background-color: cyan;
+         }
+    </style>
+    <title>CSS Selector</title>
+</head>
+<body>
+    <div>
+        IM a DIV from SIGMA
+    </div>
+    <span class="yellow">
+        IM Span From SIGMA
+    </span>
+    <h1 id="cyan">
+        IM H1 From SIGMA
+    </h1>
+    <div>
+        division parent
+        <p>IM HELLO PARAGRAPH BYE THANKYOU</p>
+    </div>
+    
+    <span>
+        <article>
+            <p>
+                HELLO BYE P FOR PARAGRAPH
+            </p>
+        </article>
+    </span>
+    
+    <a href="https:\\www.google.com">Google Bro</a>
+    
+    <main class="one">
+        <h6>Hello 1</h6>
+        <h6>Hello 2</h6>
+    </main>
+</body>
+</html>

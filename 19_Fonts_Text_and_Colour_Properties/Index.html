@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        /* The following statment is getted from google fonts.It is used to import font from external sources */
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        h1{
+            font-family: "Poppins", sans-serif;
+            font-size: 50px; /*by default 32px*/
+            text-align: center; /*used to center the text in the screen*/
+        }
+        #fonts{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic; /*Used to Italic the Words*/
+            font-weight: 500; /*Used to Bold the text*/
+            text-decoration: underline; /*Used to underline*/
+            text-decoration-color: red ; /*used to change the color of text decoration*/
+            text-decoration-style:solid  ; /*used to change the style of text decoration*/
+            text-decoration-thickness: 8px; /*used to change the thickness of text decoration*/
+
+        }
+
+        #cursive{
+            font-family: "Cedarville Cursive", cursive;
+        }
+
+        #lineheight{
+            line-height: 45px; /*Line Height is the height between the lines */
+        }
+        #letterspacing{
+            letter-spacing: 10px;
+        }
+        h2{
+            text-transform: capitalize; /*Used to capitalize first word*/
+        }
+        h3{
+            text-transform: lowercase; /
+        }
+        h4{
+            text-transform: uppercase;
+        }
+        #overflow{
+            width: 40px;
+            border: 10px solid red;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #wordbreak{
+            width: 50px;
+            border: 10px solid cyan;
+            word-break: break-all;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts <- capitalize</h2> 
+        <p id="fonts">This Is Para About Fonts</p>
+        <p id="cursive">Font Imported Paragraph</p>
+        <h2>Line height</h2>
+        <p id="lineheight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam recusandae dolor voluptates nemo rem a aliquam maiores asperiores saepe perspiciatis. Minus voluptatibus natus placeat dolorum blanditiis voluptate ipsam itaque numquam praesentium molestias? Praesentium culpa enim ea natus corrupti. Eligendi sequi labore earum vitae, reprehenderit ab.</p>
+        <p id="letterspacing">letter spacing</p>
+        <h2>overflow</h2>
+        <p id="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam rem odio reiciendis voluptatem iure similique voluptate cupiditate eum sunt, aliquid voluptas pariatur natus?
+        </p>
+        <h2>Word Break</h2>
+        <p id="wordbreak">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, non sunt animi inventore hic tempora voluptatem expedita labore corporis libero nisi quis? Delectus?</p>
+        <h3>ABOUT WORLD <- lowercase</h3>
+        <h4>about universe <- uppercase</h4>
+    </div>
+    
+</body>
+</html>
