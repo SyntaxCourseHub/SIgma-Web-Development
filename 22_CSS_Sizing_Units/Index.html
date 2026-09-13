@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <Style>
+        html{
+            font-size: 20px;
+        }
+        *{
+           padding: 0px;
+           margin: 0px;
+        }
+        .box{
+            border: 5px solid rgba(237, 51, 0, 0.927);
+            box-sizing: border-box;
+            background-color: aqua;
+            margin: auto; /*This means we want to apply the width from both sides.It is not apply on Inline elements*/
+            /* width: 2048px; it is customly seted value.*/
+            width: 80vw; /*It Stand for viewport width.It is in percentage*/
+        }
+        .container{
+            border: 5px solid rgba(237, 51, 0, 0.927);
+            box-sizing: border-box;
+            background-color: aqua;
+            margin: 20px auto; /*20 px apply on both top and bottom*/
+            width: 80vw;
+            font-size: 16px;
+            height: 70vh;
+            
+        }
+        .container p{
+            font-size: 1em; /*It inherit from parent.'1' means the 1 X parent font size*/
+        }
+        .container #rem{
+            font-size: 1rem;
+            border: 2px solid black;
+            width: 50%; /*This means the 50% of the parent width */
+        }
+        .cont{
+            box-sizing: border-box;
+            border: 5px solid darkmagenta;
+            background-color: aqua;
+            margin: 23px auto;
+            font-size: 25px ;
+             min-height: 80vh; /*it represent the min height of box so when we add more content it dont overflow and it automatically adjust.And we remove the content the box remains it height not wrap it*/
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+        .percent{
+            box-sizing: border-box;
+            height: 80vh;
+            width: 80vw;
+            margin: 20px auto;
+            border: 5px solid red;
+            background-color: cyan;
+        }
+        .percent > .in{
+            border: 5px solid red;
+            margin: 50px auto;
+
+            height: 50%;
+            width: 50%;
+        }
+    </Style>
+</head>
+<body>
+    <div class="box">
+        <p>This is A Navigation bar</p>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque in maiores est, harum tenetur debitis aspernatur enim quasi saepe? Illo, dolores velit.
+        </p>
+        <p id="rem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eum impedit, quia, accusantium harum delectus recusandae dignissimos corrupti itaque, quam dolores reprehenderit magni!</p>
+    </div>
+    <div class="cont">
+        <p>Im another Container. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima modi asperiores labore quae obcaecati, aliquid odit corporis! Porro dicta facere molestias quidem obcaecati, quasi eos eveniet architecto quis ut fugiat quam explicabo rerum, dignissimos dolore facilis eum iste doloremque 
+    </div>
+    <div class="percent">
+        <div class="in">
+
+        </div>
+    </div>
+
+</body>
+</html>

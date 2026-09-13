@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            border: 5px solid red;
+            /* display: inline; make a block element inline */
+            display: inline-block; /*make the box outer from inline element and from inner it become block element*/
+            padding: 45px;
+            margin: 25px;
+        }
+        .box1{
+            /* display: none; It removes all the display properties */
+            visibility: hidden; /*It make the box invisible but preserve the space of box*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        Im a box
+    </div>
+    <div class="box">
+        Im also a box
+    </div>
+    <span>
+        span
+    </span>
+    <span>
+        span 2
+    </span>
+</body>
+</html>

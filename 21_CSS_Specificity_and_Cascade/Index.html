@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+    <style>
+        /* Specificity=1 */
+        h1 {
+            color: chartreuse;
+        }
+
+        /* Specificity=1+10=11.Specificity Increased */
+        h1.blue {
+            color: blue;
+        }
+
+        /* Specificity=10 */
+        .purple {
+            color: purple;
+        }
+
+        /* Specificity=10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* Specificity=10 */
+        .red {
+            color: red;
+        }
+
+        /*attribute selector.Specificity=10 */
+
+        [data-='cyan'] {
+            background-color: cyan;
+        }
+
+        ol {
+            background-color: rgba(136, 255, 215, 0.778) !important;
+            /*with !important this gains more importance and cannot be overwrited*/
+        }
+
+        ol {
+            background-color: violet;
+        }
+
+        /* Which Color apply? It is decided by specificity which comes under Cascade Algoritham */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="purple red yellow blue" data-="cyan">
+            Specificity
+        </h1>
+        <h2>Cascade Algroithm</h2>
+        <ol>
+            <li>Position and order of apperance: the order in which your CSS rules appear.It works when all selector are
+                of one type</li>
+            <li>Specificity: an algorithm that determines which CSS selector has the strongest match.It is overwritted
+                by stronger selector(inline > ID > class > element > universal)</li>
+            <li>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS
+                from a browser (User Agent Stylesheet), or your authored CSS</li>
+            <li>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule
+                type</li>
+        </ol>
+        <h2>Calculate Specificity</h2>
+        <p>To Calculate the Specificity of A Selector Allot Them A value.Like This-</p>
+        <ol>
+            <li>
+                Universal Selector: 0
+            </li>
+            <li>
+                Element selectors and pseudo-elements: 1
+            </li>
+
+            <li>
+                Class selectors, attribute selectors, and pseudo-classes: 10
+            </li>
+
+            <li>
+                ID selectors: 100
+            </li>
+            <li>
+                Inline styles: 1000
+            </li>
+        </ol>
+        <h2>Quick Quiz</h2>
+        <h3>Calculate the Specificity of the following selector-> a.harryclass.rohan-class[href]:hover {
+            color: red;}</h3>
+        <p>Solution- a=element=1,.harryclass=class=10, .rohan-class[href]:hover=class,Attribute Selector,Pseudo Selector=10+10+10=30 Total=1+10+30=41</p>
+    </div>
+</body>
+
+</html>
