@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box{
+            width: 50vw;
+            height: 25vh;
+            border: 5px solid red;
+            overflow: auto;
+            /* overflow-x: hidden;
+            
+            overflow-y: scroll; */ /*We can individually apply these properties to x and y pos.*/
+
+            /* overflow: scroll hidden; */ /*Instead of writting overflow-x and y we can write like this here is syntax-> overflow: x y*/
+
+            /* white-space: nowrap; It dont allow text to wordwrap */
+
+            /* text-overflow: ellipsis; IT add the "..." after the text to wrap it. Use it with overflow:hidden */
+
+            /* different overflow properties -> 
+            overflow: auto -> Adds scrollbars only when the content overflow.
+            overflow: visible -> Content is allowed to extend outside the element. Default
+            overflow: hidden -> Extra content is clipped and not shown.
+            overflow: scroll -> Adds scrollbars only when needed.
+            overflow: clip -> Clips overflowing content without allowing scrolling.
+
+            
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Im a good box and i love to write Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, doloremque fuga nisi rem accusantium accusamus corporis deleniti asperiores fugit sequi reprehenderit illum tenetur aut harum sint iste! Incidunt praesentium quo quod excepturi eius sapiente, vitae quasi velit omnis, aperiam cum facere blanditiis adipisci officiis nemo!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro cumque tempora dolorum et temporibus, velit nulla debitis, officia voluptatibus atque perferendis accusantium?
+    </div>
+    
+</body>
+</html>

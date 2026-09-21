@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Position Property</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .box{
+                border: 2px solid black;
+                /* Fixed */
+                /* height: 300px; */
+                /* sticky */
+                /* height: 250px; */
+                height: 100px;
+                width: 80vw;
+                margin: 2px;
+                padding: 2px;
+            }
+            .box1{
+                /* Relative */
+                /* position: relative; */
+                background-color: aqua;
+            /* z-index: 1; used to make the box1 at top of box2.If we remove it the box2 comes at top of the box 1 */
+            /* sticky */
+            /* position: sticky;
+            top: 5px;
+            height: 50px; */
+        }
+        .box2{
+            /* fixed */
+            /* position: fixed;
+            top: 50vh;
+            height: 111px; */
+            
+            
+            background-color: chocolate;
+            
+
+            /* Relative */
+            /* position: relative; */
+            /* top: 1px ; */
+            /*Relative*/
+            /* bottom: 43px;
+            left: 48px; */
+            
+            
+        }
+        .box3{
+            background-color: bisque;
+        }
+        .box4{
+            /* Absolute */
+            /* position: absolute; */
+            background-color: beige;
+            /* Absolute */
+            /* bottom: 0px; */
+        }
+        
+            
+        
+        .parent{
+            /* transform, filter, or perspective properties can also
+            make an element appear as positioned */
+
+            /* Absolute */
+            /* position: relative; */
+            margin: 23px;
+            padding: 55px;
+            border: 2px solid red
+        }
+        /* Meaning of Each position units:
+        Static:It is default.No object move from its position
+        Relative: The element stays in its original space, but you can visually move it.
+        Absolute: This removes the element from the normal document flow.The browser places it according to its nearest positioned ancestor.
+        Fixed: The element is positioned relative to the browser viewport.s
+        Sticky: It starts like a normal element, but when you scroll to a specified position, it sticks.
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
