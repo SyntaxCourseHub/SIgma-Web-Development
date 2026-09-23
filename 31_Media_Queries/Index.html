@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        /* It change the background color when the max width is lower than 500px. */
+        @media only screen and (max-width: 500px){ 
+            body{
+                background-color: cyan;
+            }
+            
+        }
+        @media only screen and (min-width: 500px){
+            .conts{
+                display: inline-block;
+            }
+        }
+        
+        .cont{
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            padding: 45px;
+            /* display: inline-block; */
+        }
+        .cont2{
+            background-color: darkorange;
+            border: 2px solid black;
+            padding: 45px;
+            /* display: inline-block; */
+        }
+        .cont3{
+            background-color: cadetblue;
+            border: 2px solid black;
+            padding: 45px;
+            /* display: inline-block; */
+        }       
+    </style>
+</head>
+<body>
+    <div class="cont conts">
+        IM A CONTAINER UNDER SEC 32
+    </div>
+    <div class="cont2 conts">
+        IM A CONTAINER UNDER SEC 32
+    </div>
+    <div class="cont3 conts">
+        IM A CONTAINER UNDER SEC 32
+
+    </div>
+</body>
+</html>

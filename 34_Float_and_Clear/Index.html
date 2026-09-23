@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .card{
+            border: 2px solid black;
+            display: flow-root; /*If image is overflowing it makes the border adjust to the height and width of image*/
+        }
+        img{
+            float: left; /*Used to make the image on the left of screen and the content on lower comes to its right side.*/
+        }
+        .cards{
+            margin: 2px;
+            border: 2px solid red;
+        }
+        .AboutBMW{
+            clear: left; /*It dont allow the element on its left side.It will move to bottom of element */
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn9jBaVEYP8HKIYDVHghZJN-z3r08Z_78Oo2VQkX-2QA&s" alt="BMW">
+    <h1 class="cards">ABOUT BMW</h1>
+    <div class="AboutBMW">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur qui officia nemo minima impedit aliquam, nisi asperiores ipsum! Repudiandae id doloremque voluptate distinctio cum corrupti ex tempora molestias, obcaecati aperiam architecto aliquam, adipisci quam possimus minus ut pariatur assumenda voluptatibus eos voluptates reprehenderit quod consectetur hic? Voluptatibus blanditiis dolores repellendus ab saepe explicabo rem quia. Consequatur quod dolorum soluta minima impedit, at voluptatum blanditiis perferendis, tempore dolores, laudantium doloribus iusto temporibus aspernatur mollitia quasi. Soluta a, eveniet nemo odio dolore aliquid voluptatum sed adipisci at, eaque corporis vero perspiciatis, quae debitis incidunt tempore culpa autem provident? Nemo minima non sunt rem! Soluta in inventore repudiandae asperiores iusto? Enim, deleniti vitae! Aut eos asperiores ipsa iste est impedit, animi saepe? Odit?</div >
+    <div class="cards">Card 3</div >
+    </div
+</body>
+</html>
+
+<!-- IMPORTANT NOTE -->
+ <!-- The FLOAT and CLEAR  is used in old website.IN CSS 3,IT is NOT RECOMMENDED to use.Instead we use flex display property -->

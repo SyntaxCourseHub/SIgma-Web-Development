@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* It is used to specify Global variables */
+        :root{
+            --navcolor: rgb(127, 255, 212);
+            --contcolor: rgb(194, 250, 232); 
+            --defbord: 2px;
+            --defcolor: black;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .nav{
+            background-color: var(--navcolor);
+            
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        ul li:first-child{
+            --navcolor: orange; /*Local Variable.It will overwrite the global variable*/
+            background-color: var(--navcolor,);
+        }
+        .seccont{
+            background-color: var(--seccolor,grey); /*It is used to specify that if any variable not found the given another color will added*/
+
+            border: var(--defbord) solid var(--defcolor) 
+        }
+
+        .container{
+            background-color: var(--contcolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam distinctio odit incidunt quia nemo impedit, voluptate placeat earum natus laudantium dicta non. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque non deserunt dolor omnis sit reprehenderit quisquam error ex, in commodi labore eum ut!
+    </div>
+    <div class="seccont">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic incidunt aliquid ut ducimus aut quia sapiente, illo, nihil, odio est iure a. Assumenda quisquam magnam molestiae, quis magni facilis, necessitatibus distinctio voluptatibus cupiditate, architecto recusandae accusamus illum obcaecati veritatis sint aspernatur est ut nihil sapiente!
+    </div>
+    
+</body>
+</html>

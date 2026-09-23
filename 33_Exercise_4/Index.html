@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4 Multicolor NavBar</title>
+    <style>
+        body{
+            background-color: rgb(215, 215, 172);
+        }
+        :root{
+            --navbgcolor: rgb(133, 238, 255);
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            color: rgb(236, 31, 0);
+            padding: 10px;
+        }
+        ul{
+           
+            list-style: none;
+            display: flex;
+        }
+        nav{
+            box-shadow: -1px 3px 9px rgb(162, 162, 162);
+            background-color: var(--navbgcolor);
+            margin-bottom: 10px;
+            border: 2px solid rgb(141, 185, 241);
+            
+        }
+        .content{
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+     <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Support</li>
+        </ul>
+    </nav>
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis distinctio sequi suscipit facere, in dolorum soluta blanditiis harum, ut ad mollitia! Officiis reiciendis id necessitatibus excepturi praesentium deserunt illum, repellat, itaque eveniet, eos nobis eaque error optio tempora fugiat magni placeat fugit autem quasi quisquam?
+    </div>
+</body>
+</html>
