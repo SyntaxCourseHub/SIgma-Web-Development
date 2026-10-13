@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Properties</title>
+    <style>
+        .container{
+            background-color: bisque;
+            height: 500px;
+            width: 800px;
+            border: 2px solid black;
+        }
+        .box{
+            background-color: aqua;
+            height: 50px;
+            width: 50px;
+            border: 2px solid red;
+            /*Four Properties of Transition.Try The Transition in Dev Tools by Turning of the transform class in box*/
+            transition-property: background-color, transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+        }
+        .transform{
+            transform: translateX(300px) translateY(300px) scale(5);
+            background-color: blue;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box transform">
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Masterclass</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid; /*Used to specify grid.when we specify grid the rows created.we can see them using chrome dev tools*/
+            grid-template-columns: [one]100px [two]120px;
+            grid-template-rows:100px 100px 100px;
+
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        .item5{
+            grid-row: 1/2; /*It means the item5 row start from 1 and end before 2*/
+            /* grid-column: 1/2; */
+            grid-column: one/two;
+            
+            
+        }
+        .item1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item item5">5</div>
+    </div>
+    
+</body>
+</html>

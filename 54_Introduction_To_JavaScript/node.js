@@ -1,0 +1,6 @@
+console.log("Hello World")
+console.log("Preparing to Run")
+console.log("Code is looking fine")
+console.log("Code is Executing Fine")
+console.log("Code is Running")
+console.log("code is Runned and Exited")
